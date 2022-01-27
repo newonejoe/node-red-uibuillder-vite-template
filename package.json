@@ -1,0 +1,26 @@
+{
+    "name": "nodered-template-project",
+    "description": "--- exchange this description with a useful one ---",
+    "version": "0.0.1",
+    "dependencies": {
+        "node-red": "^2.0.6",
+        "node-red-contrib-ui-media": "^1.2.0",
+        "node-red-contrib-uibuilder": "4.1.4",
+        "node-red-dashboard": "^3.0.4",
+        "node-red-node-ui-list": "^0.3.6",
+        "node-red-node-ui-table": "^0.3.11"
+    },
+    "bundledDependencies": [
+        "node-red",
+        "node-red-dashboard",
+        "node-red-contrib-ui-media",
+        "node-red-node-ui-list",
+        "node-red-node-ui-table"
+    ],
+    "node-red": {
+        "settings": {
+            "flowFile": "flow.json",
+            "credentialsFile": "flow_cred.json"
+        }
+    }
+}

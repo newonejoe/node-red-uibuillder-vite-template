@@ -1,0 +1,65 @@
+[
+    {
+        "id": "c27732f21b6c89b1",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8cb615daa6b6dc95",
+        "type": "uibuilder",
+        "z": "c27732f21b6c89b1",
+        "name": "vue-app",
+        "topic": "",
+        "url": "vue-app",
+        "fwdInMessages": false,
+        "allowScripts": false,
+        "allowStyles": false,
+        "copyIndex": true,
+        "templateFolder": "blank",
+        "extTemplate": "",
+        "showfolder": false,
+        "useSecurity": false,
+        "sessionLength": 432000,
+        "tokenAutoExtend": false,
+        "reload": false,
+        "sourceFolder": "dist",
+        "x": 810,
+        "y": 240,
+        "wires": [
+            [],
+            []
+        ]
+    },
+    {
+        "id": "122c418ba66127f9",
+        "type": "inject",
+        "z": "c27732f21b6c89b1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "greeting",
+        "payload": "hello from node-red",
+        "payloadType": "str",
+        "x": 500,
+        "y": 240,
+        "wires": [
+            [
+                "8cb615daa6b6dc95"
+            ]
+        ]
+    }
+]
