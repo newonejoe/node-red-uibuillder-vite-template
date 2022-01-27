@@ -7,7 +7,7 @@ Vite (French word for "quick", pronounced /vit/, like "veet") is a new breed of 
 The rule for uibuilder is simple and elegant: "Make sure there is index.html in the src or dist folder and all its resources available". During my struggle with following the vue and webpack approach from the nodered forum, the main problem is comming from the src path(.js .css .icon .svg) in the dist index.html. It finally worked after changing those path to uibuilder rule (eg: from src="/index.js" to src="index.js" or src="./index.js"). The second problem: poor debugging feedback because you have to build first and then check the change.
 
 ### uibuilder dist folder formatting
-The answer is add a format.js script and exceute this after build
+The answer is adding a format.js script and let it be executed after build
 
     // package.json
     build: vite buid && node ./scripts/format.js
