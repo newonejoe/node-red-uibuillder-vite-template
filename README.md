@@ -35,7 +35,8 @@ You will get an socket.io invalid namespace error if check the default url 'http
         Save and deploy
 
     // Go to uibuilder folder and create react-app or vue-app with vite
-    Reference the README file inside each folder [vue-app](https://github.com/newonejoe/node-red-uibuillder-vite-template/tree/main/uibuilder/vue-app) [react-app](https://github.com/newonejoe/node-red-uibuillder-vite-template/tree/main/uibuilder/react-app) .
+    
+Reference the README file inside each folder [vue-app](https://github.com/newonejoe/node-red-uibuillder-vite-template/tree/main/uibuilder/vue-app) [react-app](https://github.com/newonejoe/node-red-uibuillder-vite-template/tree/main/uibuilder/react-app) .
 
 
 
