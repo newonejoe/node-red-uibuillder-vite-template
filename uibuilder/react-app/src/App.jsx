@@ -9,7 +9,8 @@ function App() {
   const [receivedPayload, setReceivedPayload] = useState('');
 
   useEffect(()=>{
-    uibuilder.start();
+    // uibuilder start with specified namespace
+    uibuilder.start('/react-app');
 
     uibuilder.onChange('msg', (message)=>{
       if(message !== null) {

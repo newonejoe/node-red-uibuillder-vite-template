@@ -20,7 +20,7 @@
     },
     created(){
       // start uibuilder socket.io
-      uibuilder.start();
+      uibuilder.start('/vue-app');
     },
     methods:{
     },
