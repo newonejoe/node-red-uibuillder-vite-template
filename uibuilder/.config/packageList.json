@@ -1,3 +1,4 @@
 [
-  "socket.io"
+  "socket.io",
+  "jquery"
 ]

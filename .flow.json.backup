@@ -2,7 +2,7 @@
     {
         "id": "c27732f21b6c89b1",
         "type": "tab",
-        "label": "Flow 1",
+        "label": "Front-End",
         "disabled": false,
         "info": "",
         "env": []
@@ -11,9 +11,9 @@
         "id": "8cb615daa6b6dc95",
         "type": "uibuilder",
         "z": "c27732f21b6c89b1",
-        "name": "react-app",
+        "name": "vue3-app",
         "topic": "",
-        "url": "react-app",
+        "url": "vue3-app",
         "fwdInMessages": false,
         "allowScripts": false,
         "allowStyles": false,
@@ -24,13 +24,14 @@
         "useSecurity": false,
         "sessionLength": 432000,
         "tokenAutoExtend": false,
-        "oldUrl": "vue-app",
         "reload": false,
         "sourceFolder": "dist",
         "x": 810,
         "y": 240,
         "wires": [
-            [],
+            [
+                "f19aac0944e0d2d9"
+            ],
             []
         ]
     },
@@ -62,5 +63,22 @@
                 "8cb615daa6b6dc95"
             ]
         ]
+    },
+    {
+        "id": "f19aac0944e0d2d9",
+        "type": "debug",
+        "z": "c27732f21b6c89b1",
+        "name": "",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1040,
+        "y": 240,
+        "wires": []
     }
 ]
