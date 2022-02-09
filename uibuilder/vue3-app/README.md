@@ -11,7 +11,7 @@ This template should help get you started developing with Vue 3 in Vite. The tem
     // choose vue3  and typescript in wizard
 
 
-Add uibuilder dependency, we are using the uibuilder to get messages from node-red and also send it back.
+Add uibuilder dependency, we are using the uibuilder to get message from node-red and also send it back.
 
     yarn add node-red-contrib-uibuilder
     yarn add socket.io-client
@@ -137,38 +137,28 @@ const asyncData = inject('asyncData') as IData;
 
 
 
-## How to test
-Start dev server in shell in vue-app folder, default link is http://localhost:3000
+## How to develope
+Start dev server in shell(CMD, Powershell, Bash) in vue3-app folder, default link is http://localhost:3000
+```
+yarn dev
+```
+Open Brower and try changing something to see the update in the web page with following link http://localhost:3000/
 
-    yarn dev
-
-Open Brower and test with following link http://localhost:3000/
-
+You can even use `yarn build --watch` as an option to build the dist files when you change any source files in case your project is small and compact. You will lose time if the project is complex and consuming more time for buiding.
+```
+yarn build --watch
+```
 ## How to build
 Change the build options:
 ```javascript
 // vite.config.js
-  build:{
-    rollupOptions: {
-      output: {
-        entryFileNames: `[name].js`,
-        manualChunks: undefined,
-        assetFileNames: `[name].[ext]`,
-      },
-    },
-    // prevent vendor.css
-    cssCodeSplit: false,
-  },
+export default defineConfig({
+  base: './'
+})
 ```
-
-Add a format script[scripts/format.js] and use is during build. Change this script accordingly to format the index.html in dist folder.
-```json
-// package.json
-"build": "vite build",
+Run build command to generate the dist folder and static files
 ```
-```json
-// package.json
-"build": "vite build && node ./scripts/format.js"
+yarn build
 ```
 
 ## Recommended IDE Setup

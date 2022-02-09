@@ -4,6 +4,7 @@ import { createVuePlugin } from 'vite-plugin-vue2'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './',
   plugins: [
     // vue2
     createVuePlugin()
@@ -14,19 +15,6 @@ export default defineConfig({
     include: [
       'node-red-contrib-uibuilder/front-end/src/uibuilderfe.js',
     ]
-  },
-  build:{
-    rollupOptions: {
-      output: {
-        entryFileNames: `[name].js`,
-        manualChunks: undefined,
-        assetFileNames: `[name].[ext]`,
-        // format: 'cjs',
-      },
-    },
-    // prevent vendor.css
-    cssCodeSplit: false,
-    // prevent
   },
   server:{
     proxy:{

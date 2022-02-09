@@ -48,39 +48,32 @@ import uibuilder from 'node-red-contrib-uibuilder/front-end/src/uibuilderfe.js'
   },[]);
   ...
 ```
-## How to test
-Start dev server in shell in vue-app folder, default link is http://localhost:3000
+## How to develope
+Start dev server in shell(CMD, Powershell, Bash) in react-app folder, default link is http://localhost:3000
+```
+yarn dev
+```
+Open Brower and try changing something to see the update in the webpage with following link http://localhost:3000.
 
-    yarn dev
+You can even use `yarn build --watch` as an option to build the dist files when you change any source files in case your project is small and compact. You will lose time if the project is complex and consuming more time for buiding.
+```
+yarn build --watch
+```
 
-Open Brower and test with following link http://localhost:3000.
 
 ## How to build
-Change the build options:
+Change the base path (`the default path is '/'`) in the vite.config.js :
 ```javascript
 // vite.config.js
-  build:{
-    rollupOptions: {
-      output: {
-        entryFileNames: `[name].js`,
-        manualChunks: undefined,
-        assetFileNames: `[name].[ext]`,
-      },
-    },
-    // prevent vendor.css
-    cssCodeSplit: false,
-    // prevent
-  },
+export default defineConfig({
+  base: './'
+})
+```
+Run below build command to generate the dist folder and static files.
+```
+yarn build
 ```
 
-Add a format script[scripts/format.js] and use is during build. Change this script accordingly to format the index.html in dist folder.
-
-```json
-    "build": "vite build
-```
-```json
-    "build": "vite build && node ./scripts/format.js",
-```
 ## Recommended IDE Setup
 
 - [VSCode](https://code.visualstudio.com/)

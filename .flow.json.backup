@@ -24,6 +24,7 @@
         "useSecurity": false,
         "sessionLength": 432000,
         "tokenAutoExtend": false,
+        "oldUrl": "react-app",
         "reload": false,
         "sourceFolder": "dist",
         "x": 810,
@@ -77,7 +78,7 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1040,
+        "x": 1060,
         "y": 240,
         "wires": []
     }
