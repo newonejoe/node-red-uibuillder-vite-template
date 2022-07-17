@@ -1,6 +1,6 @@
 import { App, provide, reactive, ref } from 'vue'
 // @ts-ignore
-import uibuilder from 'node-red-contrib-uibuilder/front-end/src/uibuilderfe.js'
+import uibuilder from 'node-red-contrib-uibuilder/front-end/uibuilder.esm.js'
 import IData from '../interface/IData';
 
 
